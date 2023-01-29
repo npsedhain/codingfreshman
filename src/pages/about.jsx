@@ -61,44 +61,88 @@ export default function About() {
           </div>
           <div className="lg:order-first lg:row-span-2">
             <h1 className="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
-              I’m Anup Sedhain. I live in Nepal, where I bring design to life.
+              I'm not a prodigy
             </h1>
             <div className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400">
               <p>
-                I’ve loved making things for as long as I can remember, and
-                wrote my first program when I was 6 years old, just two weeks
-                after my father brought home the brand new computer that was 40
-                pounds heavy.
+                The tech world has you believe that you need to be a child
+                genius to make a good programmer. It's not true.
               </p>
               <p>
-                The only thing I loved more than computers as a kid was getting
-                on stage. When I was 8, I climbed the stage to talk about what I
-                loved the most. I told them it was holiday. I loved playing with
-                my friends in the dirt and wander around the world of pac-man in
-                my black and white screen. I realized I was in love with two
-                things that day, talking in front of people and computers.
+                I didn't start writing codes when I was six. Heck, I didn't even
+                write a single line of code before I was in high school.
               </p>
               <p>
-                Today, I’m a full time software engineer. I help people
-                realize their dreams and I am also a part time amateur story teller where
-                I tell my dreams and realities to other people. While I am working on
-                other people's stories and help build their dreams, I have
-                realized my own and have crafted my own stories to tell others.
+                When my mother brought back a computer book for me at grade 9, I
+                went to school the other day to exchange it with my beloved
+                Accounts book. So you know that I have never written a single
+                line of code in <strong>QBASIC</strong>. I lack the basics.
+              </p>
+              <p>
+                In high school, I was not even interested in the extra credit
+                computer. But that was when I was familiarized with the words{' '}
+                <strong>conio</strong> and <strong>stdio</strong>. But with
+                great shame, I must tell you that I don't yet know the meaning
+                or purpose of those words.
+              </p>
+              <p>
+                I think it's about right time to tell you that I work as a full
+                time software developer for a company based in California. I
+                know, lucky them!
+              </p>
+              <br />
+              <p>
+                However, there is one thing I absolutely loved since my early
+                days. And that was a mic and a stage.
+              </p>
+              <p>
+                I was at grade 3, when I got the taste of winning. I came in
+                first at a debate competition and it felt sweet. It was also my
+                first ever debate and I had won over a team that always stood
+                first.
+              </p>
+              <p>
+                From then to grade 7, until I switched school, I always
+                participated either in Elocution or Debate and stood not less
+                than second position. I lost track of it after that, but I know
+                now that I love taking the stage and uttering words.
+              </p>
+              <br />
+              <p>
+                I guess by now you have figured out what I am trying to do here.
+                I am trying to bring the little of two worlds that I am familiar
+                with. Some people would say that I have had a decent success as
+                a mediocre developer and I want to tell that story to the world.
               </p>
             </div>
           </div>
           <div className="lg:pl-20">
             <ul role="list">
-              <SocialLink href="#" icon={TwitterIcon}>
+              <SocialLink
+                href="https://twitter.com/codingfreshman"
+                icon={TwitterIcon}
+              >
                 Follow on Twitter
               </SocialLink>
-              <SocialLink href="#" icon={InstagramIcon} className="mt-4">
+              <SocialLink
+                href="https://www.instagram.com/codingfreshman/"
+                icon={InstagramIcon}
+                className="mt-4"
+              >
                 Follow on Instagram
               </SocialLink>
-              <SocialLink href="#" icon={GitHubIcon} className="mt-4">
+              <SocialLink
+                href="https://github.com/npsedhain"
+                icon={GitHubIcon}
+                className="mt-4"
+              >
                 Follow on GitHub
               </SocialLink>
-              <SocialLink href="#" icon={LinkedInIcon} className="mt-4">
+              <SocialLink
+                href="https://www.linkedin.com/in/anup-sedhain-073563154/"
+                icon={LinkedInIcon}
+                className="mt-4"
+              >
                 Follow on LinkedIn
               </SocialLink>
               <SocialLink

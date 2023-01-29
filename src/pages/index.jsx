@@ -13,10 +13,10 @@ import {
   LinkedInIcon,
 } from '@/components/SocialIcons'
 import image1 from '@/images/photos/image-1.jpg'
-import image2 from '@/images/photos/image-2.jpg'
-import image3 from '@/images/photos/image-3.jpg'
-import image4 from '@/images/photos/image-4.jpg'
-import image5 from '@/images/photos/image-5.jpg'
+import image2 from '@/images/photos/image-2.jpeg'
+// import image3 from '@/images/photos/image-3.jpeg'
+import image4 from '@/images/photos/image-4.jpeg'
+import image5 from '@/images/photos/image-5.jpeg'
 import logoAirvet from '@/images/logos/airvet_logo.svg'
 import logoLeapfrog from '@/images/logos/logo_leapfrog.svg'
 import logoPolydelic from '@/images/logos/polydelic_logo.svg'
@@ -217,7 +217,7 @@ function Photos() {
   return (
     <div className="mt-16 sm:mt-20">
       <div className="-my-4 flex justify-center gap-5 overflow-hidden py-4 sm:gap-8">
-        {[image1, image2, image3, image4, image5].map((image, imageIndex) => (
+        {[image1, image2, image4, image5].map((image, imageIndex) => (
           <div
             key={image.src}
             className={clsx(
@@ -245,39 +245,35 @@ export default function Home({ articles }) {
         <title>Anup Sedhain - Software engineer, and amateur storyteller</title>
         <meta
           name="description"
-          content="I’m Anup, a software engineer and storyteller based in Nepal. Not so long ago I used to be a coding freshman where I did almost everything for the very first time. It was not so easy and I know it isn't for a lot of other coding freshmen out there in the world. I aim to help those in need with my story as a coding freshman."
+          content="I’m Anup, a software engineer and storyteller based in Nepal. I am sharing what I learn in my journey as a software developer."
         />
       </Head>
       <Container className="mt-9">
         <div className="max-w-2xl">
           <h1 className="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
-            I tell stories about coding
+            I tell stories
           </h1>
           <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-            I’m Anup, a software engineer and storyteller based in Nepal. Not so
-            long ago I used to be a coding freshman where I did almost
-            everything for the very first time. It was not so easy and I know it
-            isn't for a lot of other coding freshmen out there in the world. I
-            aim to help those in need with my story as a coding freshman.
+            I’m Anup, a software engineer and storyteller based in Nepal. I am sharing what I learn in my journey as a software developer.
           </p>
           <div className="mt-6 flex gap-6">
             <SocialLink
-              href="https://twitter.com"
+              href="https://twitter.com/codingfreshman"
               aria-label="Follow on Twitter"
               icon={TwitterIcon}
             />
             <SocialLink
-              href="https://instagram.com"
+              href="https://www.instagram.com/codingfreshman/"
               aria-label="Follow on Instagram"
               icon={InstagramIcon}
             />
             <SocialLink
-              href="https://github.com"
+              href="https://github.com/npsedhain"
               aria-label="Follow on GitHub"
               icon={GitHubIcon}
             />
             <SocialLink
-              href="https://linkedin.com"
+              href="https://www.linkedin.com/in/anup-sedhain-073563154/"
               aria-label="Follow on LinkedIn"
               icon={LinkedInIcon}
             />
@@ -293,7 +289,7 @@ export default function Home({ articles }) {
             ))}
           </div>
           <div className="space-y-10 lg:pl-16 xl:pl-24">
-            <Newsletter />
+            {/* <Newsletter /> TODO */}
             <Resume />
           </div>
         </div>
