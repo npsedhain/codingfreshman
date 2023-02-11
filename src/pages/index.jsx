@@ -143,13 +143,17 @@ function Newsletter() {
         <MailIcon className="h-6 w-6 flex-none" />
         <span className="ml-3">Stay up to date</span>
       </h2>
-      <p className="mt-2 text-sm text-zinc-600 dark:text-zinc-400">
-        Get notified when I publish something new, and unsubscribe at any time.
-      </p>
+      {!isSubscribed && (
+        <p className="mt-2 text-sm text-zinc-600 dark:text-zinc-400">
+          Get notified when I publish something new, and unsubscribe at any
+          time.
+        </p>
+      )}
       {isSubscribed ? (
         <p className="mt-6 text-sm text-zinc-600 dark:text-zinc-400">
-          Thank you for subscribing. We will have a lot of fun together and I
-          promise to enlighten you every Sunday!
+          Thank you for subscribing. I promise I won't spam you. For now you
+          should have received a confirmation email. Go confirm the subscription
+          and I will see you around.
         </p>
       ) : (
         <div className="mt-6">

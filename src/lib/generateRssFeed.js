@@ -9,12 +9,12 @@ export async function generateRssFeed() {
   let siteUrl = process.env.NEXT_PUBLIC_SITE_URL
   let author = {
     name: 'Anup Sedhain',
-    email: 'npsedhain@gmail.com',
+    email: 'anup@codingfreshman.com',
   }
 
   let feed = new Feed({
     title: author.name,
-    description: 'Your blog description',
+    description: 'Sharing my journey as an independent software developer.',
     author,
     id: siteUrl,
     link: siteUrl,
