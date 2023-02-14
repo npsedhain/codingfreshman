@@ -32,6 +32,7 @@ export function Newsletter() {
   const onSubmit = async (e) => {
     e.preventDefault()
 
+    localStorage.setItem('CF-EMAIL-SUBMITTED', true)
     const res = await fetch(
       `${process.env.NEXT_PUBLIC_CONVERT_KIT_BASE_URL}/forms/${process.env.NEXT_PUBLIC_CONVERT_KIT_FORM_ID}/subscribe`,
       {
@@ -61,13 +62,13 @@ export function Newsletter() {
         <span className="ml-3">Stay up to date</span>
       </h2>
       {!isSubscribed && (
-        <p className="mt-2 text-sm text-zinc-600 dark:text-zinc-400">
-          Get notified when I publish something new, and unsubscribe at any
-          time.
+        <p className="mt-2 text-sm text-zinc-600 dark:text-zinc-300">
+          Hear from me every Sunday, directly at your inbox. No spam. No ad.
+          Just content to make you a better software developer every week.
         </p>
       )}
       {isSubscribed ? (
-        <p className="mt-6 text-sm text-zinc-600 dark:text-zinc-400">
+        <p className="mt-6 text-sm text-zinc-600 dark:text-zinc-300">
           Thank you for subscribing. I promise I won't spam you. For now you
           should have received a confirmation email. Go confirm the subscription
           and I will see you around.
