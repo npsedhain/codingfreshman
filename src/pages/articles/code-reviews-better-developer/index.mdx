@@ -1,0 +1,63 @@
+import { ArticleLayout } from '@/components/ArticleLayout'
+import Image from 'next/image'
+import codeReviews from '../../../../public/images/codeReviews.jpeg'
+
+export const meta = {
+  author: 'Anup Sedhain',
+  date: '2023-02-26',
+  title: 'How Code Reviews can make you a Better Developer?',
+  description:
+    'You have been underestimating the power of effective code reviews.',
+}
+
+export default (props) => <ArticleLayout meta={meta} {...props} />
+
+I used to dread code reviews. It felt like carving yourself open to invite judgmental comments. I did not look forward to it.
+
+It even felt like a waste of time. Updating variable names, changing function orders, simplifying logic, and following stylistic guidelines. I didn’t see a point to it and hated when that happened.
+
+And if you are anything like I used to be, you hate it too. You doubt your own abilities when you read through PR comments and worse, each PR comment discourages you.
+
+I remember when I used to feel that way.
+
+But I went past it. I overcame my fear. Today I look forward to code reviews and honestly, it is one of the better portions of my day.
+
+In this post, I will share how I changed my perspective toward code reviews and how you can do it too. (And why you should.)
+
+<Image src={codeReviews} alt="Code Reviews" />
+
+It was a normal day at the office (back when I used to work from an actual office space with 50 others in the same hall). I had just opened a PR and was taking a moment before going through the remaining tickets in the sprint. That’s when I hear one of my senior colleagues burst out into laughter. Everyone’s heads turn towards him. Who doesn't want a good laugh?
+
+I reach his desk and see what was so funny on screen that everyone around him had joined in for a laugh. I saw it - he was reviewing my code. I didn’t know how to react. I smiled but I also went red with embarrassment.
+
+As he was laughing, he removed a big chunk of code and replaced it with a single line. At that moment, I went from being embarrassed to being amazed. I thought to myself, “Why didn’t I think of that? It’s so simple.”
+
+This experience changed how I perceived code reviews. Although at the beginning it might have made me a bit skeptical and more fearful of opening a PR. I was wary of being a laughing stock again. In retrospect, that experience did more good than bad.
+
+I started checking my own code. To catch any sections where I could improve. Soon enough I started seeing those quirks myself. I went the extra mile to come up with a better solution. All those variable name changes and function order changes started to make more sense. They made my code more readable. After all, we are writing codes for humans.
+
+I also started reviewing other people’s codes. That’s when I realized that nobody writes perfect code all the time. Sometimes even the most senior developers make silly mistakes. And how they handled the situation without feeling a bit of insult was something I could learn from. After all, we are always learning. What helped me was taking myself less seriously and the process a bit more lightly. (You don’t need to wear your heart on your sleeves all the time.)
+
+Instead of being wary that my code would make people laugh. I started looking forward to such moments because it meant I would learn something interesting and important. I started seeing code reviews as an opportunity to learn.
+
+But the feeling that you are learning alone doesn’t make you look forward to events. We all need to have some fun, right?
+
+And to my surprise, I was having fun. Addressing comments became the time for me to unwind from stress. Break the monotony of writing codes all day. It was also a time when colleagues in my team came together to solve a problem. We have come up with a lot of good ideas during this time. Code reviews have become a fruitful and fun team engagement activity for us.
+
+Today I have developed a lens through which I see my own work from someone else’s perspective. I go through my code multiple times before getting opinions from others. I have become a conscious and careful developer.
+
+I have formed a habit of giving each PR an extra hour of walk-through. I do not rush to get my work out but carefully critique myself and see how I can come up with the best possible solution. I also catch a lot of prospective comments and make changes before the fact.
+
+I am aware that it’s not the most time-efficient approach but it’s a healthy one. We are not competing with anyone to produce as many lines of code in the least amount of time. Your conscious effort might feel like you are taking a lot of time now. But you end up saving a lot by reducing time to refactor later. You also eliminate code smell. And you are writing maintainable code. That is a big win.
+
+Comprehensive code reviews also mean that your code handles all edge cases and is prone to fewer bugs. You might be a stellar coder but sometimes something just doesn’t cross your mind. You will miss that hidden requirement or make a silly mistake. Hence a fresh set of eyes is not just a good to have but a must-have. Always consider code reviews as a positive and constructive situation.
+
+I have also realized that however hard I try to catch my own mistakes, I do get a lot of comments. But let me tell you what a lot of comments don’t mean.
+
+It doesn’t mean you are doing a bad job - far from it.
+
+One thing you should start doing is to stop getting offended when someone suggests a change. The process of learning during code reviews goes both ways. Remember that the person who is reviewing is also learning from what you have done.
+
+Sometimes a lot of comments mean a difference of opinion. Rather than taking it as a command, take it as an opportunity to make your thought process clearer. Don’t ever get defensive, respond with a question and discuss further to get on the same page. Remember you both want the best for the team and for the software you are writing.
+
+Never shy away from asking a lot of questions. What you are doing with code reviews is you are harnessing somebody else’s brain power. And doing so is not a sign of weakness. It is actually a sign of wisdom.
