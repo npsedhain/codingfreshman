@@ -1,0 +1,108 @@
+import { ArticleLayout } from '@/components/ArticleLayout'
+import Image from 'next/image'
+import javascript from '../../../../public/images/javascript.jpg'
+
+export const meta = {
+  author: 'Anup Sedhain',
+  date: '2023-03-06',
+  title: 'Should JavaScript developers panic?',
+  description:
+    'The future of web development looks bright.',
+}
+
+export default (props) => <ArticleLayout meta={meta} {...props} />
+
+“Javascript is the assembly language of the web.” - **Scott Hanselman**
+
+If this sentence doesn’t make sense to you. I suggest you read on.
+
+If this does make sense, wait until you read the end and you will change your mind.
+
+A decade back this was a famous analogy. And rightfully so.
+
+<Image src={javascript} alt="JavaScript" />
+<a href="http://www.freepik.com">Designed by vectorjuice / Freepik</a>
+
+Javascript has been the sole ruler of all things web. Any code you write or frameworks/libraries you use like Vue, React, CoffeeScript, and so on. They were all converted to JS which is then Just in Time-compiled into **machine instructions** for virtual machines in the browsers to understand.
+
+But on the 17th of June 2015, that analogy lost its weight.
+
+A few weeks ago, my friend told me that he had started tinkering with Rust. I brushed it off at the time because he is always doing something and I couldn’t care less.
+
+But a week after that, he asked if I wanted to join him in trying to figure out Rust together. Like we used to do back in the day.
+
+I didn’t want to. I was quite occupied with my work but since it was the second time he brought it up. I asked him, “Why would I want to learn Rust?”
+
+You know WebAssembly and Rust. They go together.
+
+This got my attention. Anything with the web on it. I jump in. *(I am also a big Spiderman fan, so you know I am not bluffing!)*
+
+I am someone who inadvertently missed all the assembly language classes at my university. So when I heard the term web and assembly together. It ruffled some feathers in my brain. I never knew these two words could be brought together. How are they going to work? I wondered.
+
+I will start with the word that I am least familiar with. **Assembly**. The only thing I know about it is that it’s a low-level language. And what’s that you ask?
+
+You must be aware that computers only understand 0s and 1s.
+
+That means the code you write in plain english using different frameworks and libraries bas to be converted to 0s and 1s. That’s where assembly language comes into play. In simple terms, they act as a translator which sits between the code you write and the computer hardware. Over which they have more direct control.
+
+Assembly language is just a human readable form of machine language.
+
+So what does it mean when they say WebAssembly?
+
+Let’s just say, it means that you can run assembly code in the browser.
+
+Prior to June 17, 2015, almost everything would be compiled into Javascript. But with the introduction of WASM (WebAssembly), you get to write code in C, C++, C#, and Rust that will now be compiled into actual assembly language.
+
+*But hey, why would I want assembly language on the web? I am happy with what I have.*
+
+With the information you have already, you won’t be surprised if I said assembly language is much faster and efficient than any high level language. Its introduction to the web is a vital step forward for **web-based** computing.
+
+Today, you already use web browsers for most things. Documentation, communication, content consumption, you name it. It all happens on the web.
+
+But even today, when it comes to designers and video creators, they use what we call **native apps**. Let’s take applications such as [Adobe PhotoShop](https://www.adobe.com/products/photoshop.html) and [Adobe Premiere Pro](https://www.adobe.com/products/premiere.html). They have not yet made it to the web. *(We do have [Adobe Express](https://www.adobe.com/express/) on the web but it’s not as powerful. Even Adobe Express has been possible due to WASM.)*
+
+But this could all change, the way we see browsers and computers might not be all that different in the future.
+
+And developers are excited with the idea that the need to write native applications is reducing. It is because the browser environment is essentially identical across PCs, tablets, and phones. It is also same across Windows, Mac, Android, Linux, and so on. This removes developers from having to recompile their code for different CPU types.
+
+Web-based computing is platform-independent.
+
+And there has already been a lot of great news since the arrival of WASM in 2015.
+
+Let’s get back to Adobe and its famous PDF reader, [Acrobat](https://blog.developer.adobe.com/acrobat-on-the-web-powered-by-webassembly-782385e4947e). They introduced it on the web back in 2020 which, you guessed it, is powered by WebAssembly.
+
+[Figma](https://www.figma.com/), a market leader in web design, also leverages WebAssembly. And the fact that their web application is as good as the native counterpart is possible only because of WASM.
+
+Gaming on the web is undergoing ground breaking changes too. A game from Epic or Unity that took 20-30 seconds to load now just takes a couple of seconds. That’s at least a 10x improvement. And it’s a significant jump.
+
+So what does this mean for Javascript? Is it a programming language that's bound to fail?
+
+Hear it from the father of Javascript, **Brendan Eich**, who also introduced WebAssembly to the world -
+
+***“We’re not killing JavaScript. I don’t think it’s even possible to kill JavaScript.”***
+
+WebAssembly is not a replacement for Javascript, but in reality, it is designed to complement and run alongside it. At least that is where we are headed as of now.
+
+Just consider WebAssembly as a nitrous booster to Javascript. Everywhere Javascript struggled, WebAssembly is going to shine.
+
+I am, however, not oblivious to the fact that WebAssembly does hold the potential to replace Javascript in web applications. Take this project [Yew](https://github.com/yewstack/yew) as an example, it is a rust framework for creating multi-threaded front-end web apps with WebAssembly.
+
+But projects like these are in the nascent stage and they still support JS interoperability. They have to.
+
+So I don’t want any of the Javascript aficionados to panic. Yet. You will long be off market before WASM replaces Javascript. You have better things to worry about right now. *(Heard of Chat-GPT?)*
+
+However, if you are looking at something interesting to dive deep into and learn something that would help you in your career. This could really be it.
+
+Starting today not only means you will be at the forefront of a growing community, but you could be the driving force that helps web-based computing reach its potential.
+
+The future of web-based computing hasn’t been more bright. I suggest you take your sunglasses out before the ride.
+
+If you are interested *(which I believe you are if you read till the end)*, here are some resources that will quickly get you started with WebAssembly.
+
+1. This is a book that explains how to use [Rust and WebAssembly](https://rustwasm.github.io/book/why-rust-and-webassembly.html)
+
+2. MDN is a great resource for anything web related. I highly recommend their [tutorial](https://developer.mozilla.org/en-US/docs/WebAssembly). They are also the pioneers of WASM.
+
+3. If you are interested to know further about WebAssembly and about it's inception. Read [this](https://medium.com/javascript-scene/what-is-webassembly-the-dawn-of-a-new-era-61256ec5a8f6).
+
+Until next time, happy coding!
