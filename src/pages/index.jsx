@@ -193,7 +193,7 @@ export default function Home({ articles }) {
         <title>Anup Sedhain - Software engineer, and amateur storyteller</title>
         <meta
           name="description"
-          content="I’m Anup, a software engineer and storyteller based in Nepal. I am sharing what I learn in my journey as a software developer."
+          content="I’m Anup, a software engineer and storyteller based in Banglore, India. I am originally from Nepal and I am sharing what I learn in my journey as a software developer."
         />
       </Head>
       <Container className="mt-9">
@@ -202,7 +202,7 @@ export default function Home({ articles }) {
             I tell stories
           </h1>
           <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-            I’m Anup, a software engineer and storyteller based in Nepal. I am
+            I’m Anup, a software engineer and storyteller based in Banglore. I am originally from Nepal and I am
             sharing what I learn in my journey as a software developer.
           </p>
           <div className="mt-6 flex gap-6">

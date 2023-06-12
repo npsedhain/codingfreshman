@@ -44,7 +44,7 @@ export default function About() {
         <title>About - Anup Sedhain</title>
         <meta
           name="description"
-          content="I’m Anup Sedhain. I live in Nepal, where I bring design to life."
+          content="I’m Anup Sedhain. I am a full-stack software developer and an aspiring story-teller."
         />
       </Head>
       <Container className="mt-16 sm:mt-32">
