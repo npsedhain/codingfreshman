@@ -202,8 +202,8 @@ export default function Home({ articles }) {
             I tell stories
           </h1>
           <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-            I’m Anup, a software engineer and storyteller based in Kathmandu. I am originally from Nepal and I am
-            sharing what I learn in my journey as a software developer.
+            I’m Anup. I am pursuing a Master's degree in Computer Science at University of Florida. I write software and love telling stories too. I am originally from Nepal and I am
+            sharing what I learn as I embark on my twisted journey.
           </p>
           <div className="mt-6 flex gap-6">
             <SocialLink
