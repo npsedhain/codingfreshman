@@ -3,47 +3,53 @@ import Head from 'next/head'
 
 import { Card } from '@/components/Card'
 import { SimpleLayout } from '@/components/SimpleLayout'
-import logoAnimaginary from '@/images/logos/animaginary.svg'
-import logoCosmos from '@/images/logos/cosmos.svg'
-import logoHelioStream from '@/images/logos/helio-stream.svg'
-import logoOpenShuttle from '@/images/logos/open-shuttle.svg'
-import logoPlanetaria from '@/images/logos/planetaria.svg'
+import logoRubato from '@/images/logos/rubato.png'
+import logoUltify from '@/images/logos/ultify.png'
+import logoReact from '@/images/logos/react.svg'
+import logoAirvet from '@/images/logos/airvet_logo.svg'
+import logoCode from '@/images/logos/code.png'
 
 const projects = [
   {
-    name: 'Planetaria',
+    name: 'Care Portal',
     description:
-      'Creating technology to empower civilians to explore space on their own terms.',
-    link: { href: 'http://planetaria.tech', label: 'planetaria.tech' },
-    logo: logoPlanetaria,
+      'Architected and led the development of an internal tool that powers the in house veterinarian technician to communicate with pet parents.',
+    link: { href: 'https://www.airvet.com', label: 'care.airvet' },
+    logo: logoAirvet,
   },
   {
-    name: 'Animaginary',
+    name: 'Airvet Blog',
     description:
-      'High performance web animation library, hand-written in optimized WASM.',
-    link: { href: '#', label: 'github.com' },
-    logo: logoAnimaginary,
+      'Architected the transfer of WordPress site to Next App with WP as a headless CMS and created a custom css parser to map WP classes to tailwind classes.',
+    link: { href: 'https://www.airvet.com/blog', label: 'blog.airvet' },
+    logo: logoAirvet,
   },
   {
-    name: 'HelioStream',
+    name: 'Ultify',
     description:
-      'Real-time video streaming library, optimized for interstellar transmission.',
-    link: { href: '#', label: 'github.com' },
-    logo: logoHelioStream,
+      'Helped build a real time knowledge sharing platform based in Europe. Handled video transcoding, live video transmission with MUX, peer-to-peer communication, etc.',
+    link: { href: 'https://ultify.io/', label: 'ultify.io' },
+    logo: logoUltify,
   },
   {
-    name: 'cosmOS',
+    name: 'Rubato',
     description:
-      'The operating system that powers our Planetaria space shuttles.',
-    link: { href: '#', label: 'github.com' },
-    logo: logoCosmos,
+      'Built a platform for artists to share local events. Worked on features like - contract creation and signing with Scrive, impressions tracking, subscriptions, etc.',
+    link: { href: 'https://www.polydelic.com/case-studies', label: 'rubato' },
+    logo: logoRubato,
   },
   {
-    name: 'OpenShuttle',
+    name: 'Messaging in distributed systems',
+    description: 'A simulation of message passing using gossip protocol and push sum algorithm in a distributed system using highly parallel actor model in Pony.',
+    link: { href: 'https://github.com/npsedhain/gossip-push-sum', label: 'gossip.simulation' },
+    logo: logoCode,
+  },
+  {
+    name: 'React Clone',
     description:
-      'The schematics for the first rocket I designed that successfully made it to orbit.',
-    link: { href: '#', label: 'github.com' },
-    logo: logoOpenShuttle,
+      'Created a minimal clone of react with its own diffing algorithm. And made a TODO app using the custom library. Write components as Javascript functions.',
+    link: { href: 'https://github.com/npsedhain/vDom', label: 'vDom' },
+    logo: logoReact,
   },
 ]
 
@@ -65,12 +71,12 @@ export default function Projects() {
         <title>Projects - Anup Sedhain</title>
         <meta
           name="description"
-          content="Things I’ve made trying to put my dent in the universe."
+          content="Things I’ve built trying to put my dent in the universe."
         />
       </Head>
       <SimpleLayout
-        title="Things I’ve made trying to put my dent in the universe."
-        intro="I’ve worked on tons of little projects over the years but these are the ones that I’m most proud of. Many of them are open-source, so if you see something that piques your interest, check out the code and contribute if you have ideas for how it can be improved."
+        title="My dent in this universe"
+        intro="These are the things I’ve made trying to put my dent in the universe. I’ve worked on tons of little projects and worked with handful of companies over the years. These are the hand picked products that I’m most proud of."
       >
         <ul
           role="list"

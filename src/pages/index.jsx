@@ -83,17 +83,14 @@ function SocialLink({ icon: Icon, ...props }) {
   )
 }
 
-function Resume() {
+function Timeline() {
   let resume = [
     {
       company: 'Airvet',
-      title: 'Web Engineer',
+      title: 'Software Engineer',
       logo: logoAirvet,
       start: '2021',
-      end: {
-        label: 'Present',
-        dateTime: new Date().getFullYear(),
-      },
+      end: '2024',
     },
     {
       company: 'Polydelic',
@@ -135,9 +132,8 @@ function Resume() {
               <dt className="sr-only">Date</dt>
               <dd
                 className="ml-auto text-xs text-zinc-400 dark:text-zinc-500"
-                aria-label={`${role.start.label ?? role.start} until ${
-                  role.end.label ?? role.end
-                }`}
+                aria-label={`${role.start.label ?? role.start} until ${role.end.label ?? role.end
+                  }`}
               >
                 <time dateTime={role.start.dateTime ?? role.start}>
                   {role.start.label ?? role.start}
@@ -199,11 +195,19 @@ export default function Home({ articles }) {
       <Container className="mt-9">
         <div className="max-w-2xl">
           <h1 className="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
-            I tell stories
+            Software-by-a-Human
           </h1>
           <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-            I’m Anup. I am pursuing a Master's degree in Computer Science at University of Florida. I write software and love telling stories too. I am originally from Nepal and I am
-            sharing what I learn as I embark on my twisted journey.
+            I’m Anup. It's pronounced AH-NOOP.
+            I am pursuing a Master's degree in Computer Science at the University of Florida.
+          </p>
+          <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
+            On the surface, I am just one of a million people writing software in this world.
+            But I believe my love for stories makes me unique.
+            So much so that I believe even a good software should tell a story.
+          </p>
+          <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
+            I am currently looking for an internship opportunity for the summer of 2025. If you are rightfully questioning, why me? Take a look <a className='text-teal-500' href="/articles/why-me">here</a>.
           </p>
           <div className="mt-6 flex gap-6">
             <SocialLink
@@ -239,7 +243,7 @@ export default function Home({ articles }) {
           </div>
           <div className="space-y-10 lg:pl-16 xl:pl-24">
             <Newsletter />
-            <Resume />
+            <Timeline />
           </div>
         </div>
       </Container>
