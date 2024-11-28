@@ -8,6 +8,7 @@ import logoUltify from '@/images/logos/ultify.png'
 import logoReact from '@/images/logos/react.svg'
 import logoAirvet from '@/images/logos/airvet_logo.svg'
 import logoCode from '@/images/logos/code.png'
+import logoGo from '@/images/logos/go.png'
 
 const projects = [
   {
@@ -37,6 +38,19 @@ const projects = [
       'Built a platform for artists to share local events. Worked on features like - contract creation and signing with Scrive, impressions tracking, subscriptions, etc.',
     link: { href: 'https://www.polydelic.com/case-studies', label: 'rubato' },
     logo: logoRubato,
+  },
+  {
+    name: 'Reddit Clone',
+    description:
+      'A backend simulation of a Reddit clone built in Go using the Proto Actor framework. It models user interactions with Zipf distribution, supports nested comments, calculates karma dynamically, and leverages actor-based concurrency for scalability and fault tolerance.',
+    link: { href: 'https://github.com/npsedhain/reddit-clone', label: 'reddit' },
+    logo: logoGo,
+  },
+  {
+    name: 'Gator Ticket Master',
+    description: "This project was completed as coursework for the Advanced Data Structures class. It simulates a ticketing platform using a Red-Black tree and binary heap data structure to maintain a queueing system and issue/cancel/update users' tickets.",
+    link: { href: 'https://github.com/npsedhain/gator-ticket-master', label: 'gator.ticket.master' },
+    logo: logoCode,
   },
   {
     name: 'Messaging in distributed systems',
