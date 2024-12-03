@@ -47,6 +47,12 @@ const projects = [
     logo: logoGo,
   },
   {
+    name: 'Chord Distributed Hash Table',
+    description: "This project implements the Chord Distributed Hash Table (DHT) protocol as described in the Chord paper using the Pony programming language. Chord provides efficient distributed lookup of key-value pairs using consistent hashing and finger tables.",
+    link: { href: 'https://github.com/npsedhain/chord-p2p', label: 'chord.dht.protocol' },
+    logo: logoCode,
+  },
+  {
     name: 'Gator Ticket Master',
     description: "This project was completed as coursework for the Advanced Data Structures class. It simulates a ticketing platform using a Red-Black tree and binary heap data structure to maintain a queueing system and issue/cancel/update users' tickets.",
     link: { href: 'https://github.com/npsedhain/gator-ticket-master', label: 'gator.ticket.master' },
