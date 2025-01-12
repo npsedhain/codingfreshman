@@ -17,12 +17,14 @@ import image2 from '@/images/photos/image-2.jpeg'
 import image4 from '@/images/photos/image-4.jpeg'
 import image5 from '@/images/photos/image-5.jpeg'
 import logoAirvet from '@/images/logos/airvet_logo.svg'
+import logoUF from '@/images/logos/uf-logo.svg'
 import logoLeapfrog from '@/images/logos/logo_leapfrog.svg'
 import logoPolydelic from '@/images/logos/polydelic_logo.svg'
 import { generateRssFeed } from '@/lib/generateRssFeed'
 import { getAllArticles } from '@/lib/getAllArticles'
 import { formatDate } from '@/lib/formatDate'
 import { Newsletter } from '@/components/NewsLetter'
+import { Button } from '@/components/Button'
 
 function BriefcaseIcon(props) {
   return (
@@ -86,6 +88,13 @@ function SocialLink({ icon: Icon, ...props }) {
 function Timeline() {
   let resume = [
     {
+      company: 'University of Florida',
+      title: 'MSCS',
+      logo: logoUF,
+      start: '2024',
+      end: '2026',
+    },
+    {
       company: 'Airvet',
       title: 'Software Engineer',
       logo: logoAirvet,
@@ -112,7 +121,7 @@ function Timeline() {
     <div className="rounded-2xl border border-zinc-100 p-6 dark:border-zinc-700/40">
       <h2 className="flex text-sm font-semibold text-zinc-900 dark:text-zinc-100">
         <BriefcaseIcon className="h-6 w-6 flex-none" />
-        <span className="ml-3">Work</span>
+        <span className="ml-3">History</span>
       </h2>
       <ol className="mt-6 space-y-4">
         {resume.map((role, roleIndex) => (
@@ -147,10 +156,9 @@ function Timeline() {
           </li>
         ))}
       </ol>
-      {/* <Button href="#" variant="secondary" className="group mt-6 w-full">
-        Download CV
-        <ArrowDownIcon className="h-4 w-4 stroke-zinc-400 transition group-active:stroke-zinc-600 dark:group-hover:stroke-zinc-50 dark:group-active:stroke-zinc-50" />
-      </Button> */}
+      <Button href="/resume.pdf" variant="secondary" className="group mt-6 w-full">
+        View Resume
+      </Button>
     </div>
   )
 }
@@ -226,14 +234,14 @@ export default function Home({ articles }) {
               icon={GitHubIcon}
             />
             <SocialLink
-              href="https://www.linkedin.com/in/anup-sedhain-073563154/"
+              href="https://www.linkedin.com/in/npsedhain/"
               aria-label="Follow on LinkedIn"
               icon={LinkedInIcon}
             />
           </div>
         </div>
       </Container>
-      <Photos />
+      {/* <Photos /> */}
       <Container className="mt-24 md:mt-28">
         <div className="mx-auto grid max-w-xl grid-cols-1 gap-y-20 lg:max-w-none lg:grid-cols-2">
           <div className="flex flex-col gap-16">
