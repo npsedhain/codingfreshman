@@ -84,7 +84,7 @@ export default function Uses() {
           <ToolsSection title="Productivity">
             <Tool title="Notion">
               Whenever I have a long list of TODOs. When I have thoughts to
-              pour. My articles. Even the first draft of this page was on
+              pour. My essays. My stories. Even the first draft of this page was on
               Notion. I just fire it up when I feel like writing anything except
               for codes.
             </Tool>

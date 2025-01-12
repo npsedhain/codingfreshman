@@ -63,7 +63,7 @@ function ArrowDownIcon(props) {
 function Article({ article }) {
   return (
     <Card as="article">
-      <Card.Title href={`/articles/${article.slug}`}>
+      <Card.Title href={`/essays/${article.slug}`}>
         {article.title}
       </Card.Title>
       <Card.Eyebrow as="time" dateTime={article.date} decorate>
@@ -207,7 +207,7 @@ export default function Home({ articles }) {
             So much so that I believe even a good software should tell a story.
           </p>
           <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-            I am currently looking for an internship opportunity for the summer of 2025. If you are rightfully questioning, why me? Take a look <a className='text-teal-500' href="/articles/why-me">here</a>.
+            I am currently looking for an internship opportunity for the summer of 2025. If you are rightfully questioning, why me? Take a look <a className='text-teal-500' href="/essays/why-me">here</a>.
           </p>
           <div className="mt-6 flex gap-6">
             <SocialLink

@@ -12,7 +12,7 @@ export function Prose({ children, className }) {
 
     if (element.current) {
       document.addEventListener('scroll', () => {
-        if (window.scrollY > 700) setShowOverlay(true)
+        if (window.scrollY > 700) setShowOverlay(false)
       })
     }
   }, [])
