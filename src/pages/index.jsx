@@ -212,26 +212,29 @@ export default function Home({ articles }) {
             I have over 5 years of industry experience and I am currently looking for a summer internship.
             Here is my <a className='text-teal-500' href="/resume.pdf">resume</a>.
           </p>
-          <p className="mt-10 text-base text-zinc-600 dark:text-zinc-400">
-            Hi! I am Anup. I am originally from Nepal. Currently, I am pursuing a Masters of Science in Computer Science at the University of Florida.
-          </p>
           <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-            My major field of interest is in parallel computer architecture. With the increasing need for resources for computation - scalable parallel systems is our answer. But designing efficient scalable distributed parallel systems is always a challenge which is where I want to keep working towards.
+            Hi! I’m Anup, originally from Nepal and currently pursuing a Master’s in Computer Science at the University of Florida.
           </p>
-          <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-            Other than that, I am also interested in Data Engineering and Machine Learning.
+          <p className="mt-2 text-base text-zinc-600 dark:text-zinc-400">
+            My primary interest lies in parallel computer architecture. With the growing demand for computational resources, scalable parallel systems are the way forward. However, designing efficient and scalable distributed parallel systems remains a complex challenge—and that’s exactly where I want to focus my efforts.
           </p>
-          <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-            This semester I am affiliated with Adaptive Learning and Optimization Lab where I am working on predicting users’ tipping point in social networks using TGNNs and developing an interactive visualization system to maintain information integrity in a platform.
+          <p className="mt-2 text-base text-zinc-600 dark:text-zinc-400">
+            Beyond this, I’m also passionate about Data Engineering and Machine Learning.
           </p>
-          <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-          Before UF, I worked at Airvet, an industry leading startup that provides 24*7 veterinary care as an employee benefit.
+          <p className="mt-2 text-base text-zinc-600 dark:text-zinc-400">
+            This semester, I’m affiliated with the Adaptive Learning and Optimization Lab, where I’m working on predicting users’ tipping point in the context of social norm emergence using TGNNs and developing an interactive visualization system to maintain information integrity in online social networks.
           </p>
-          <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-          I have over 5 years of full stack software engineering experience where I have architected products from 0 to 1; and scaled them for thousands of users.
+
+          <p className="mt-2 text-base text-zinc-600 dark:text-zinc-400">
+            Before joining UF, I worked at Airvet, a leading startup providing 24/7 veterinary care as an employee benefit.
           </p>
-          <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-          As of now, I am in search of internship opportunities where I can work on designing scalable systems or creating and managing data pipelines for ML models, analytics, and so on.
+
+          <p className="mt-2 text-base text-zinc-600 dark:text-zinc-400">
+            I bring over five years of full-stack software engineering experience, during which I’ve architected products from the ground up and scaled them to serve thousands of users.
+          </p>
+
+          <p className="mt-2 text-base text-zinc-600 dark:text-zinc-400">
+            Currently, I’m looking for internship opportunities where I can contribute to designing scalable systems or building and managing data pipelines for ML models, analytics, and more.
           </p>
           <div className="mt-6 flex gap-6">
             <SocialLink
