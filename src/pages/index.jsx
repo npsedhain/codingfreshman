@@ -203,19 +203,35 @@ export default function Home({ articles }) {
       <Container className="mt-9">
         <div className="max-w-2xl">
           <h1 className="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
-            Software-by-a-Human
+            Software Engineer
           </h1>
-          <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-            I’m Anup. It's pronounced AH-NOOP.
-            I am pursuing a Master's degree in Computer Science at the University of Florida.
+          <p className="mt-6 text-lg text-zinc-800 dark:text-zinc-200">
+            TL;DR
+            <br />
+            I am currently pursuing a Master’s degree in Computer Science at the University of Florida, specializing in Parallel Systems with a minor in Data Engineering and Machine Learning.
+            I have over 5 years of industry experience and I am currently looking for a summer internship.
+            Here is my <a className='text-teal-500' href="/resume.pdf">resume</a>.
+          </p>
+          <p className="mt-10 text-base text-zinc-600 dark:text-zinc-400">
+            Hi! I am Anup. I am originally from Nepal. Currently, I am pursuing a Masters of Science in Computer Science at the University of Florida.
           </p>
           <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-            On the surface, I am just one of a million people writing software in this world.
-            But I believe my love for stories makes me unique.
-            So much so that I believe even a good software should tell a story.
+            My major field of interest is in parallel computer architecture. With the increasing need for resources for computation - scalable parallel systems is our answer. But designing efficient scalable distributed parallel systems is always a challenge which is where I want to keep working towards.
           </p>
           <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-            I am currently looking for an internship opportunity for the summer of 2025. If you are rightfully questioning, why me? Take a look <a className='text-teal-500' href="/essays/why-me">here</a>.
+            Other than that, I am also interested in Data Engineering and Machine Learning.
+          </p>
+          <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
+            This semester I am affiliated with Adaptive Learning and Optimization Lab where I am working on predicting users’ tipping point in social networks using TGNNs and developing an interactive visualization system to maintain information integrity in a platform.
+          </p>
+          <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
+          Before UF, I worked at Airvet, an industry leading startup that provides 24*7 veterinary care as an employee benefit.
+          </p>
+          <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
+          I have over 5 years of full stack software engineering experience where I have architected products from 0 to 1; and scaled them for thousands of users.
+          </p>
+          <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
+          As of now, I am in search of internship opportunities where I can work on designing scalable systems or creating and managing data pipelines for ML models, analytics, and so on.
           </p>
           <div className="mt-6 flex gap-6">
             <SocialLink
