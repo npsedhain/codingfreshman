@@ -9,6 +9,15 @@ const nextConfig = {
   experimental: {
     scrollRestoration: true,
   },
+  async redirects() {
+    return [
+      {
+        source: '/articles/:any',
+        destination: '/essays/:any',
+        permanent: true
+      }
+    ]
+  }
 }
 
 const withMDX = nextMDX({
