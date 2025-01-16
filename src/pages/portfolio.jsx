@@ -19,16 +19,16 @@ const projects = [
     logo: logoAirvet,
   },
   {
-    name: 'Airvet Blog',
+    name: 'Airvet',
     description:
-      'Architected the transfer of WordPress site to Next App with WP as a headless CMS and created a custom css parser to map WP classes to tailwind classes.',
+      'Led the transfer of WordPress site to Next App with WP as a headless CMS and created a custom css parser to map WP classes to tailwind classes.',
     link: { href: 'https://www.airvet.com/blog', label: 'blog.airvet' },
     logo: logoAirvet,
   },
   {
     name: 'Ultify',
     description:
-      'Helped build a real time knowledge sharing platform based in Europe. Handled video transcoding, live video transmission with MUX, peer-to-peer communication, etc.',
+      'Built a real time knowledge sharing platform based in Europe. Handled video transcoding, live video transmission with MUX, peer-to-peer communication, etc.',
     link: { href: 'https://ultify.io/', label: 'ultify.io' },
     logo: logoUltify,
   },

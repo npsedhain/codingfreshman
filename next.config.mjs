@@ -15,6 +15,11 @@ const nextConfig = {
         source: '/articles/:any',
         destination: '/essays/:any',
         permanent: true
+      },
+      {
+        source: '/resume',
+        destination: '/resume.pdf',
+        permanent: true
       }
     ]
   }
