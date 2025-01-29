@@ -197,7 +197,7 @@ export default function Home({ articles }) {
         <title>Anup Sedhain - Software engineer, and amateur storyteller</title>
         <meta
           name="description"
-          content="I’m Anup, a software engineer and storyteller based in Banglore, India. I am originally from Nepal and I am sharing what I learn in my journey as a software developer."
+          content="I’m Anup, a software engineer and storyteller based in Florida. I am originally from Nepal and I am sharing what I learn in my journey as a software developer."
         />
       </Head>
       <Container className="mt-9">
