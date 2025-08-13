@@ -65,9 +65,7 @@ function ArrowDownIcon(props) {
 function Article({ article }) {
   return (
     <Card as="article">
-      <Card.Title href={`/essays/${article.slug}`}>
-        {article.title}
-      </Card.Title>
+      <Card.Title href={`/essays/${article.slug}`}>{article.title}</Card.Title>
       <Card.Eyebrow as="time" dateTime={article.date} decorate>
         {formatDate(article.date)}
       </Card.Eyebrow>
@@ -141,8 +139,9 @@ function Timeline() {
               <dt className="sr-only">Date</dt>
               <dd
                 className="ml-auto text-xs text-zinc-400 dark:text-zinc-500"
-                aria-label={`${role.start.label ?? role.start} until ${role.end.label ?? role.end
-                  }`}
+                aria-label={`${role.start.label ?? role.start} until ${
+                  role.end.label ?? role.end
+                }`}
               >
                 <time dateTime={role.start.dateTime ?? role.start}>
                   {role.start.label ?? role.start}
@@ -156,7 +155,11 @@ function Timeline() {
           </li>
         ))}
       </ol>
-      <Button href="/resume.pdf" variant="secondary" className="group mt-6 w-full">
+      <Button
+        href="/resume.pdf"
+        variant="secondary"
+        className="group mt-6 w-full"
+      >
         View Resume
       </Button>
     </div>
@@ -208,34 +211,31 @@ export default function Home({ articles }) {
           <p className="mt-6 text-lg text-zinc-800 dark:text-zinc-200">
             TL;DR
             <br />
-            I am currently pursuing a Master’s degree in Computer Science at the University of Florida, specializing in Parallel Systems with a minor in Data Engineering and Machine Learning.
-            I have over 5 years of industry experience and I am currently looking for a summer internship.
-            Here is my <a className='text-teal-500' href="/resume.pdf">resume</a>.
-          </p>
-          <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-            Hi! I’m Anup, originally from Nepal and currently pursuing a Master’s in Computer Science at the University of Florida.
-          </p>
-          <p className="mt-2 text-base text-zinc-600 dark:text-zinc-400">
-            My primary interest lies in parallel computer architecture. With the growing demand for computational resources, scalable parallel systems are the way forward. However, designing efficient and scalable distributed parallel systems remains a complex challenge—and that’s exactly where I want to focus my efforts.
+            I'm pursuing a Master's in Computer Science at UF, specializing in
+            AI/ML automation. Currently working as a Software Engineering Intern
+            at Airvet while completing my degree this December. Here is my{' '}
+            <a className="text-teal-500" href="/resume.pdf">
+              resume
+            </a>
+            .
           </p>
           <p className="mt-2 text-base text-zinc-600 dark:text-zinc-400">
-            Beyond this, I’m also passionate about Data Engineering and Machine Learning.
+            I focus on AI-driven automation and scalable systems. At Airvet,
+            I've built automation pipelines using MCP that reduced QA time by
+            80%. I also research social media analysis systems at UF, achieving
+            92% AI content detection accuracy.
           </p>
           <p className="mt-2 text-base text-zinc-600 dark:text-zinc-400">
-            This semester, I’m affiliated with the Adaptive Learning and Optimization Lab, where I’m working on predicting users’ tipping point in the context of social norm emergence using TGNNs and developing an interactive visualization system to maintain information integrity in online social networks.
+            In my free time, I read extensively about AI agents, automation
+            systems, and product development. I'm fascinated by how intelligent
+            systems can streamline workflows and enhance user experiences.
+          </p>
+          <p className="mt-2 text-base text-zinc-600 dark:text-zinc-400">
+            With over 6 years of full-stack software development experience, I'm
+            seeking full-time opportunities to build innovative AI-powered
+            products and automation systems.
           </p>
 
-          <p className="mt-2 text-base text-zinc-600 dark:text-zinc-400">
-            Before joining UF, I worked at Airvet, a leading startup providing 24/7 veterinary care as an employee benefit.
-          </p>
-
-          <p className="mt-2 text-base text-zinc-600 dark:text-zinc-400">
-            I bring over five years of full-stack software engineering experience, during which I’ve architected products from the ground up and scaled them to serve thousands of users.
-          </p>
-
-          <p className="mt-2 text-base text-zinc-600 dark:text-zinc-400">
-            Currently, I’m looking for internship opportunities where I can contribute to designing scalable systems or building and managing data pipelines for ML models, analytics, and more.
-          </p>
           <div className="mt-6 flex gap-6">
             <SocialLink
               href="https://twitter.com/codingfreshman"
