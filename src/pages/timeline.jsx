@@ -37,11 +37,16 @@ export default function Uses() {
         intro="If you want a quick look at how my life has panned out until now, here you go!"
       >
         <div className="space-y-20">
-          <TimeSection title="August 2024 - May 2026">
+          <TimeSection title="May 2025 - Present">
+            <Action title="Airvet Inc." href="https://www.airvet.com/">
+              My second leg at Airvet, and this time from the same time zone. Only this time we are fiddling with both using and building AI tools.
+            </Action>
+          </TimeSection>
+          <TimeSection title="August 2024 - December 2025">
             <Action title="University of Florida" href="https://www.cise.ufl.edu/academics/graduate/masters-program/">
-              Currently, I am pursuing MSCS with minor in Systems.
-              I have built a lot of systems from scratch but I realized I had little knowledge on scaling them.
-              After I graduate I aim to work on scaling web systems specifically using parallel algorithms.
+              Currently, I am pursuing Master of Science in Computer Science.
+              My decision to go back to school coincided with when the whole software development industry is going through an overhaul.
+              Luckily, I get to be at the forefront of that where I can learn the ins and outs of ML and use the tools to help build interesting things at Airvet.
             </Action>
           </TimeSection>
           <TimeSection title="May 2021 - July 2024">
